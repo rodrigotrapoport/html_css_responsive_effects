@@ -1,0 +1,271 @@
+@import  './var.css';
+
+header {
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#principal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    padding-top: 350;
+    padding-bottom: 350;
+}
+#texto_principal{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    padding: 50px 50px 50px 50px;
+    background-color: var(--color-principal);
+    opacity: 0.5;
+}
+#playa {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:var(--color-main);
+}
+.foto1 img{
+    border-radius: 10px;
+    width: 100%;
+    transition: width 1s;
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+}
+.foto2 img{
+    border-radius: 10px;
+    width: 100%;
+    transition: width 1s;
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+}
+.foto1 img:hover{
+    width: 110%;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+.foto2 img:hover{
+    width: 110%;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+.texto{
+    width: 100%;
+    text-align: center;
+}
+#parque {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color-main);
+}
+#rio{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color-main);
+}
+footer{  
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color-contacto);
+}
+#contacto {    
+    text-align: center;
+    width: 100%;
+}
+#formulario {
+    background-color: var(--color-formulario);
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+@media all and (min-width:700px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        color: var(--color-titulo);
+        background-color: var(--color-header);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    h1 {
+        color: var(--color-titulo);
+        background-color: var(--color-header);
+    }
+    #menu {
+        padding-left: 10px;
+    }
+    #menu ul{
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin: 0px;
+    }  
+    #menu  li{
+        display: inline;
+        list-style-type: none;
+        display: inline;
+        padding-right: 5px;
+        color: var(--color-titulo);
+    }
+    main {
+    flex-wrap: wrap;
+    }
+    main, #rio, #parque, #playa, footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .texto {
+        width: 33%; 
+    }
+    .foto1 {
+       width: 33%; 
+    }
+    .foto2{
+        width: 33%; 
+    }
+    #contacto, #formulario{
+        width: 50%;
+    }
+}
+@media all and (max-width: 700px) and (min-width:480px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-titulo);
+        background-color: var(--color-header);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    h1 {
+        color: var(--color-titulo);
+        background-color: var(--color-header);
+    }
+    #menu {
+        padding-left: 10px;
+    }
+    #menu ul{
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin: 0px;
+    }  
+    #menu  li{
+        display: inline;
+        list-style-type: none;
+        display: inline;
+        padding-right: 5px;
+        color: var(--color-titulo);
+    }
+    #texto_principal{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    main, footer {
+    flex-wrap: wrap;
+    }  
+    main, #rio, #parque, #playa, footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .texto {
+        width: 50%; 
+    }
+    .foto1 {
+       display: none; 
+    }
+    .foto2{
+        width: 50%; 
+    }
+    #contacto, #formulario{
+        width: 50%;
+    }
+}
+
+
+@media all and (max-width: 480px) {  
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-titulo);
+        background-color: var(--color-header);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    h1 {
+        color: var(--color-titulo);
+        background-color: var(--color-header);
+    }
+    #menu {
+        padding-left: 10px;
+    }
+    #menu ul{
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin: 0px;
+    }  
+    #menu  li{
+        display: inline;
+        list-style-type: none;
+        display: inline;
+        padding-right: 5px;
+        color: var(--color-titulo);
+    }
+    main, #rio, #parque, #playa, footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #texto_principal{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .texto {
+        width: 100%; 
+    }
+    .foto1 {
+       display: none; 
+    }
+    .foto2{
+        width: 100%; 
+    }
+    #contacto, #formulario{
+        width: 100%;
+    }
+}
+
+
+
